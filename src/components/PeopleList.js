@@ -1,5 +1,7 @@
 import React from 'react';
+import UserService from './../services/userServices';
 
+const userService  = new UserService();
 
 class PeopleList extends React {
     constructor(props) {
@@ -10,6 +12,11 @@ class PeopleList extends React {
         }
     }
     
+    componentDidMount(){
+        console.log(userService);
+        console.log('ashdsada');
+        
+    }
     render() {
         return (
             <div>

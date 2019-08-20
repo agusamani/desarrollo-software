@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import Image from '../assets/profile.png';
+import UserService from './../services/userServices';
 
+const userService  = new UserService();
 
 class People extends React.Component {
     constructor(props) {
         super(props) 
+    }
+
+    componentDidMount(){
+      console.log(userService.getAll());
+      console.log(userService.getById(1));
+      
     }
     render() {
         return (

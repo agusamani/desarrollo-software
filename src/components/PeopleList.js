@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import UserService from './../services/userServices';
+import People from './People';
 
 const userService  = new UserService();
 
-class PeopleList extends React {
+class PeopleList extends React.Component {
     constructor(props) {
         super(props)
 
@@ -11,16 +12,16 @@ class PeopleList extends React {
             list: []
         }
     }
-    
     componentDidMount(){
-        console.log(userService);
-        console.log('ashdsada');
-        
+        //console.log(userService.getByCategory(),"heeee");
+        this.setState({
+           list: userService.getAll()
+        })
     }
     render() {
         return (
-            <div>
-
+            <div className='people-container'>
+                {this.state.list.map( (people) => <People key={people.id} {...people}/>)}
             </div>
         )
     }

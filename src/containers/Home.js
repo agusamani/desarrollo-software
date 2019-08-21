@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-import People from '../components/People';
+import PeopleList from '../components/PeopleList';
 
 
 
@@ -9,7 +9,7 @@ class Home extends React.Component {
         return (        
            <div className="home-container">
             <Sidebar />
-            <People />
+            <PeopleList />
            </div>
         )
     }

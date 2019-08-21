@@ -9,30 +9,25 @@ class People extends React.Component {
         super(props) 
     }
 
-    componentDidMount(){
-      console.log(userService.getAll());
-      console.log(userService.getById(1));
-      
-    }
     render() {
         return (
-            <div className="row">
+            
                <div className="col s12 m7 card-container">
                  <div className="card">
                    <div className="card-image">
                      <img src={Image}></img>
-                     <span className="card-title">Pedro Gonzalez</span>
+                     <span className="card-title">{this.props.name}</span>
                    </div>
                    <div className="card-content">
-                     <p>Tengo 15 años de experiencia arreglando cualquier tipo de cañeria. Me encuentro en San Miguel de Tucuman.</p>
+                     <p>{this.props.description}</p>
                    </div>
-                   <div className="rating">Rating: <i className="fas fa-star"></i></div>
+                   <div className="rating">Rating: {this.props.rating} <i className="fas fa-star"></i></div>
                    <div className="card-action">
-                     <a href="#">Plomero</a>
+                     <a href="#">{this.props.category}</a>
                    </div>
                  </div>
               </div>
-           </div>
+          
         )
     }
 }

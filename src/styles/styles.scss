@@ -14,6 +14,28 @@ Header
     }
 }
 
+.myClassName {
+    font-size: 15px;
+    width: 100px; 
+}
+.Dropdown-control {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 64px;
+    padding-left: 35px;
+}
+.Dropdown-menu{
+    display:flex;
+    flex-direction: column;
+}
+.myOptionClassName{
+    
+}
+.Dropdown-option {
+    padding: 0;
+    height: 70px!important;
+}
 /**
 Welcome
 **/
@@ -25,7 +47,7 @@ Welcome
     width: 100%;
     text-align: center;
     width: auto;
-    height: 600px;
+    height: 880px;
 
     .welcome-container {
         padding-top: 220px;
@@ -51,8 +73,8 @@ Home
 Sidebar
 **/
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 220px; /* 0 width - change this with JavaScript */
+    height: 880px; /* 100% Full-height */
+    width: 320px; /* 0 width - change this with JavaScript */
     background-color: #D4D2D2;
 
     a {
@@ -74,16 +96,30 @@ Sidebar
       }
   }
 
+  /**
+People-Container
+**/
+
+.people-container {
+    display: flex;
+    flex-direction: row;
+}
 
 /**
 People
 **/
 .card-container {
-    width: 33%!important;
-    margin: 60px 0 0 10px;
+    width: 20.5%!important;
+    margin: 60px 25px 0 15px;
 
     img {
         height: 200px;
+    }
+    .card-title {
+        display:flex;
+        text-align: left;
+        padding: 0!important;
+        color: #2284D9!important;
     }
 }
   

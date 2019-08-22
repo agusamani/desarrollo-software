@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import '../styles/styles.scss';
@@ -16,7 +17,7 @@ const Header = () => {
     return (  
      <nav>
         <div className="nav-wrapper">
-          <a href="facebook.com" className="brand-logo left">ArreglosYa</a>
+          <Link to="/home" className="brand-logo left">ArreglosYa</Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Dropdown options={options} className='myClassName' placeholder="User" /></li>
           </ul>

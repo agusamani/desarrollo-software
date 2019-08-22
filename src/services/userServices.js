@@ -10,15 +10,14 @@ export default class userService{
         return userDb;
     }
     
-    getById(id){
-        const user = userDb.find(user => user.id === id);
+    getById(category){
+        const user = userDb.filter( user => user.category === category);
         return user;
     }
 
     getByCategory(category){
         const item = this.data.filter(user => user.category === category); 
         return item || null;
-        console.log(item);
     }
 
     storeUser(user){

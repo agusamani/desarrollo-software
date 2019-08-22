@@ -9,6 +9,7 @@ Header
 
 .nav-wrapper {
     background-color: rgb(14, 12, 12);
+    width: 100%;
     .brand-logo {
         left: 20px;
     }
@@ -66,15 +67,17 @@ Home
 **/
 .home-container {
     display: flex;
-    height: 100%;
+    flex-direction: row;
+    height: 1080px;
+    width: auto;
 }
 
 /**
 Sidebar
 **/
 .sidebar {
-    height: 880px; /* 100% Full-height */
-    width: 320px; /* 0 width - change this with JavaScript */
+    height: 100%; /* 100% Full-height */
+    width: 220px; /* 0 width - change this with JavaScript */
     background-color: #D4D2D2;
 
     a {
@@ -102,15 +105,19 @@ People-Container
 
 .people-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    height: 800px;
 }
 
 /**
 People
 **/
 .card-container {
-    width: 20.5%!important;
-    margin: 60px 25px 0 15px;
+    
+    width: 180px!important;
+    margin: 40px 25px 0 15px;
+    height: 400px;
 
     img {
         height: 200px;

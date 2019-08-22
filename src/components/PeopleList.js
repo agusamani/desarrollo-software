@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UserService from './../services/userServices';
 import People from './People';
 
@@ -13,15 +13,21 @@ class PeopleList extends React.Component {
         }
     }
     componentDidMount(){
-        //console.log(userService.getByCategory(),"heeee");
         this.setState({
            list: userService.getAll()
         })
     }
     render() {
+        let persons;
+        if( this.props.category ) {
+            persons = this.state.list.filter( filterPerson => filterPerson.category.toLowerCase() === this.props.category.toLowerCase());
+        } else {
+            persons = this.state.list;
+        }
         return (
+            
             <div className='people-container'>
-                {this.state.list.map( (people) => <People key={people.id} {...people}/>)}
+                {persons.map( (people) => <People key={people.id} {...people}/>)}
             </div>
         )
     }

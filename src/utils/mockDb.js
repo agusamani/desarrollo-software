@@ -46,14 +46,14 @@ export const userDb = [
         id:7,
         name: 'Ian Gutierrez Martin',
         category: 'Albañil',
-        description: '10 años de experiencia en el campo, San Miguel y Yerba Buena',
+        description: '10 años de experiencia en el campo, Tuc y YB',
         rating: 4,
     },
     {
         id:8,
         name: 'Aleix Navarro Nuñez',
         category: 'Gasista',
-        description: 'Matriculado, 55 años, mucha experiencia, San Miguel de Tucuman',
+        description: 'Matriculado, 55 años, mucha experiencia, Tuc.',
         rating: 5,
     },
     {
@@ -95,14 +95,14 @@ export const userDb = [
         id:14,
         name: 'Fernando Marti Santiago',
         category: 'Electricista',
-        description: 'Precios accesibles, zona de yerba buena, buenos precios',
+        description: 'Precios accesibles, zona de yerba buena.',
         rating: 4,
     },
     {
         id:15,
         name: 'Unai Gonzalez Esteban',
         category: 'Albañil',
-        description: 'Albañil, zona centrica, excelentes referencias, 20 años avalan mi servicio',
+        description: 'Albañil, zona centrica, excelentes referencias.',
         rating: 2,
     },
     {
@@ -116,7 +116,7 @@ export const userDb = [
         id:17,
         name:'Rodrigo Rivadeneira',
         category: 'Carpintero',
-        description: 'Amplia experiencia, muy buena disponibilidad horaria',
+        description: 'Amplia experiencia, disponibilidad horaria',
         rating: 5,
     },
     {
@@ -135,7 +135,7 @@ export const userDb = [
     },
     {
         id:20,
-        name: 'Agustin Armani',
+        name: 'Agustin Amani',
         category: 'Tapicero',
         description: 'Precios razonables, exelntes referencias, muy profesional',
         rating: 5,

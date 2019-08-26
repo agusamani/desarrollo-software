@@ -76,7 +76,7 @@ Home
 Sidebar
 **/
 .sidebar {
-    height: 100%; /* 100% Full-height */
+    height: 2660px; /* 100% Full-height */
     width: 220px; /* 0 width - change this with JavaScript */
     background-color: #D4D2D2;
 
@@ -128,5 +128,9 @@ People
         padding: 0!important;
         color: #2284D9!important;
     }
+    .card-content {
+        height: 136px;
+    }
+
 }
   
